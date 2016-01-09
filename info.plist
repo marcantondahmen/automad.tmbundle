@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string></string>
+	<key>contactName</key>
+	<string>Marc Anton Dahmen</string>
+	<key>description</key>
+	<string>Support for the &lt;a href="http://automad.org"&gt;Automad&lt;/a&gt; template language.</string>
+	<key>name</key>
+	<string>Automad</string>
+	<key>uuid</key>
+	<string>931A13B5-CA0E-4AB9-AC49-F09670233371</string>
+</dict>
+</plist>
