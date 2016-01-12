@@ -7,7 +7,7 @@
 		<string>php</string>
 	</array>
 	<key>injectionSelector</key>
-	<string>text.html</string>
+	<string>text.html - comment</string>
 	<key>name</key>
 	<string>Automad</string>
 	<key>patterns</key>
@@ -63,7 +63,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(\b(foreach|with|if|in|else|end)\b|[\&lt;\&gt;\=]+)</string>
+					<string>(\b(foreach|with|if|in|else|end|next|prev)\b|[\&lt;\&gt;\=]+)</string>
 					<key>name</key>
 					<string>keyword.other</string>
 				</dict>
@@ -124,7 +124,7 @@
 					<key>end</key>
 					<string>@\}</string>
 					<key>name</key>
-					<string>keyword.other</string>
+					<string>keyword.control</string>
 					<key>patterns</key>
 					<array>
 						<dict>
