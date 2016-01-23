@@ -63,7 +63,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(\b(foreach|with|if|in|else|end|next|prev)\b|[\&lt;\&gt;\=]+)</string>
+					<string>(\b(foreach|with|if|in|else|end|next|prev|snippet)\b|[\&lt;\&gt;\=]+)</string>
 					<key>name</key>
 					<string>keyword.other</string>
 				</dict>
