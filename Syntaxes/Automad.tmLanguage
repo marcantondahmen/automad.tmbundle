@@ -54,6 +54,13 @@
 					<string>\]\}</string>
 					<key>name</key>
 					<string>variable.other</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#stringfunctions</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
@@ -75,7 +82,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\d[\d\.]*</string>
+					<string>\b\d[\d\.]*\b</string>
 					<key>name</key>
 					<string>support.constant</string>
 				</dict>
@@ -186,6 +193,45 @@
 						<dict>
 							<key>include</key>
 							<string>#content</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>stringfunctions</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(?&lt;=\|)\s*[\w\-]+</string>
+					<key>name</key>
+					<string>entity.other.attribute-name</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\|</string>
+					<key>name</key>
+					<string>keyword.control</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\(</string>
+					<key>contentName</key>
+					<string>keyword.other</string>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>keyword.control</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#string</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#number</string>
 						</dict>
 					</array>
 				</dict>
