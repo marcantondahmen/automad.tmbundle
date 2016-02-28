@@ -70,7 +70,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>(\b(foreach|with|if|in|else|end|next|prev|snippet)\b|[\&lt;\&gt;\=]+)</string>
+					<string>(\b(and|else|end|for|foreach|if|in|next|not|or|prev|snippet|to|with)\b|[\&lt;\&gt;\=]+)</string>
 					<key>name</key>
 					<string>keyword.other</string>
 				</dict>
