@@ -37,7 +37,7 @@
 					<key>end</key>
 					<string>\*\}</string>
 					<key>name</key>
-					<string>comment.block</string>
+					<string>comment.block.automad</string>
 				</dict>
 			</array>
 		</dict>
@@ -49,11 +49,11 @@
 					<key>begin</key>
 					<string>\{\[</string>
 					<key>contentName</key>
-					<string>variable.parameter</string>
+					<string>variable.parameter.automad</string>
 					<key>end</key>
 					<string>\]\}</string>
 					<key>name</key>
-					<string>variable.other</string>
+					<string>variable.other.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -72,7 +72,7 @@
 					<key>match</key>
 					<string>(\b(and|else|end|for|foreach|if|in|next|not|or|prev|snippet|to|with)\b|[\&lt;\&gt;\=]+)</string>
 					<key>name</key>
-					<string>keyword.other</string>
+					<string>keyword.other.automad</string>
 				</dict>
 			</array>
 		</dict>
@@ -84,7 +84,7 @@
 					<key>match</key>
 					<string>\b\d[\d\.]*\b</string>
 					<key>name</key>
-					<string>support.constant</string>
+					<string>support.constant.automad</string>
 				</dict>
 			</array>
 		</dict>
@@ -96,11 +96,11 @@
 					<key>begin</key>
 					<string>\{</string>
 					<key>contentName</key>
-					<string>entity.other.attribute-name</string>
+					<string>entity.other.attribute-name.automad</string>
 					<key>end</key>
 					<string>\}</string>
 					<key>name</key>
-					<string>entity.other.attribute-name</string>
+					<string>entity.other.attribute-name.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -127,11 +127,11 @@
 					<key>begin</key>
 					<string>\{@</string>
 					<key>contentName</key>
-					<string>support.type</string>
+					<string>support.type.automad</string>
 					<key>end</key>
 					<string>@\}</string>
 					<key>name</key>
-					<string>keyword.control</string>
+					<string>keyword.control.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -166,11 +166,11 @@
 					<key>begin</key>
 					<string>"</string>
 					<key>contentName</key>
-					<string>string</string>
+					<string>string.automad</string>
 					<key>end</key>
 					<string>"</string>
 					<key>name</key>
-					<string>string</string>
+					<string>string.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -183,11 +183,11 @@
 					<key>begin</key>
 					<string>'</string>
 					<key>contentName</key>
-					<string>string</string>
+					<string>string.automad</string>
 					<key>end</key>
 					<string>'</string>
 					<key>name</key>
-					<string>string</string>
+					<string>string.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -206,23 +206,23 @@
 					<key>match</key>
 					<string>(?&lt;=\|)\s*[\w\-]+</string>
 					<key>name</key>
-					<string>entity.other.attribute-name</string>
+					<string>entity.other.attribute-name.automad</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\|</string>
 					<key>name</key>
-					<string>keyword.control</string>
+					<string>keyword.control.automad</string>
 				</dict>
 				<dict>
 					<key>begin</key>
 					<string>\(</string>
 					<key>contentName</key>
-					<string>keyword.other</string>
+					<string>keyword.other.automad</string>
 					<key>end</key>
 					<string>\)</string>
 					<key>name</key>
-					<string>keyword.control</string>
+					<string>keyword.control.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
