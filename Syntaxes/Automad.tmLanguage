@@ -33,9 +33,9 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\{\*</string>
+					<string>\&lt;#</string>
 					<key>end</key>
-					<string>\*\}</string>
+					<string>#\&gt;</string>
 					<key>name</key>
 					<string>comment.block.automad</string>
 				</dict>
@@ -47,18 +47,18 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\{\[</string>
+					<string>@\{</string>
 					<key>contentName</key>
-					<string>variable.parameter.automad</string>
+					<string>variable.other.automad</string>
 					<key>end</key>
-					<string>\]\}</string>
+					<string>\}</string>
 					<key>name</key>
 					<string>variable.other.automad</string>
 					<key>patterns</key>
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#stringfunctions</string>
+							<string>#pipe</string>
 						</dict>
 					</array>
 				</dict>
@@ -119,17 +119,56 @@
 				</dict>
 			</array>
 		</dict>
+		<key>pipe</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(?&lt;=\|)\s*[\w\-]+</string>
+					<key>name</key>
+					<string>entity.other.attribute-name.automad</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\|</string>
+					<key>name</key>
+					<string>keyword.control.automad</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\(</string>
+					<key>contentName</key>
+					<string>keyword.other.automad</string>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>keyword.control.automad</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#string</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#number</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
 		<key>statements</key>
 		<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\{@</string>
+					<string>\&lt;@</string>
 					<key>contentName</key>
 					<string>support.type.automad</string>
 					<key>end</key>
-					<string>@\}</string>
+					<string>@\&gt;</string>
 					<key>name</key>
 					<string>keyword.control.automad</string>
 					<key>patterns</key>
@@ -193,45 +232,6 @@
 						<dict>
 							<key>include</key>
 							<string>#content</string>
-						</dict>
-					</array>
-				</dict>
-			</array>
-		</dict>
-		<key>stringfunctions</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>(?&lt;=\|)\s*[\w\-]+</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.automad</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\|</string>
-					<key>name</key>
-					<string>keyword.control.automad</string>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>\(</string>
-					<key>contentName</key>
-					<string>keyword.other.automad</string>
-					<key>end</key>
-					<string>\)</string>
-					<key>name</key>
-					<string>keyword.control.automad</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#string</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#number</string>
 						</dict>
 					</array>
 				</dict>

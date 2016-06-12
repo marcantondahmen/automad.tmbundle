@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@{$0}</string>
+	<key>disableAutoIndent</key>
+	<true/>
+	<key>name</key>
+	<string>Variable Tag</string>
+	<key>scope</key>
+	<string>text.html.php</string>
+	<key>uuid</key>
+	<string>099E7D9B-C797-4D44-8817-8C6F52A67D35</string>
+</dict>
+</plist>
